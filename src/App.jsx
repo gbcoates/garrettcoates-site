@@ -64,7 +64,7 @@ function App() {
     if (showOminous) {
       // No longer changing document.title
     } else {
-      document.title = 'Vite + React';
+      document.title = 'Gallus gallus domesticus';
     }
   }, [showOminous, ominousIndex]);
 
