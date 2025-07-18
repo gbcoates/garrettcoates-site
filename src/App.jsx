@@ -353,7 +353,7 @@ function PongGame({ onEnd }) {
         <div className="popup">
           <div className="popup-content">
             <h2>🐔 Meet the Chickens!</h2>
-            <p>Take a break from quantum ducks and check out my other site showcasing some fabulous chickens.</p>
+            <p>Take a break from the rubber goose and check out my other site showcasing some fabulous chickens.</p>
             <a href="https://chickens.garrettcoates.com" target="_blank" rel="noopener noreferrer" className="popup-link">Visit the Chicken Gallery</a>
             <button className="popup-link" style={{ marginTop: '1.5rem', background: '#d7263d', color: '#fffbe6' }} onClick={handleClosePopup}>No thanks</button>
           </div>
