@@ -1,0 +1,66 @@
+@media (max-width: 500px) {
+  .popup-content {
+    padding: 1rem 0.5rem;
+    max-width: 90vw;
+    font-size: 1rem;
+  }
+  .ominous-message {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+  }
+  .ominous-button {
+    font-size: 1.1rem;
+    padding: 1rem 1.2rem;
+    margin-top: 1rem;
+  }
+  .log {
+    max-width: 98vw;
+    height: 90px;
+    font-size: 0.8rem;
+  }
+  .message {
+    font-size: 1rem;
+  }
+  .spinner {
+    width: 60px;
+    height: 60px;
+    border-width: 5px;
+  }
+  .container, .ominous-container {
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  .popup {
+    padding: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .popup-content {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.2rem;
+    max-width: 96vw;
+  }
+  .ominous-message {
+    font-size: 0.9rem;
+  }
+  .ominous-button {
+    font-size: 0.9rem;
+    padding: 0.7rem 0.7rem;
+  }
+  .log {
+    height: 60px;
+    font-size: 0.7rem;
+  }
+}
+
+/* Responsive map and pong canvas (override inline styles) */
+@media (max-width: 400px) {
+  iframe, canvas {
+    width: 90vw !important;
+    max-width: 98vw !important;
+    height: 120px !important;
+    max-height: 140px !important;
+  }
+}
