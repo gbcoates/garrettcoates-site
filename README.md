@@ -21,11 +21,18 @@
      ```sh
      npm install --save-dev gh-pages
      ```
-   - Add these scripts to your `package.json`:
+   - Add these scripts to your `package.json` (inside the top-level object):
      ```json
-     "scripts": {
-       "predeploy": "npm run build",
-       "deploy": "gh-pages -d dist"
+     {
+       // ...existing package.json fields...
+       "scripts": {
+         "dev": "vite",
+         "build": "vite build",
+         "preview": "vite preview",
+         "predeploy": "npm run build",
+         "deploy": "gh-pages -d dist"
+       }
+       // ...other fields...
      }
      ```
    - Deploy:
