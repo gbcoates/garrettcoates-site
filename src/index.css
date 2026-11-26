@@ -174,7 +174,106 @@ html, body {
   100% { background-color: rgba(255, 255, 255, 0.2); }
 }
 
+.wifi-success {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  animation: stars-in 500ms ease 5.2s forwards;
+}
+
+.wifi-success h1 {
+  margin: 0;
+  font-size: clamp(1.75rem, 7vw, 2.5rem);
+}
+
+.wifi-success p {
+  margin: .35rem 0 0;
+}
+
+.wifi-success .wifi-close {
+  margin-top: 1rem;
+  color: #aebdd6;
+}
+
+.space-goose {
+  position: relative;
+  width: 104px;
+  height: 106px;
+  margin-bottom: 1rem;
+  transform: rotate(-8deg);
+  animation: goose-drift 3s ease-in-out 5.2s both;
+}
+
+.space-goose span {
+  position: absolute;
+  display: block;
+}
+
+.goose-body {
+  left: 8px;
+  bottom: 4px;
+  width: 73px;
+  height: 37px;
+  border-radius: 24% 52% 48% 54%;
+  background: radial-gradient(ellipse at 42% 30%, #fff18a 23%, #ffcf37 55%, #ee921d 90%);
+}
+
+.goose-neck {
+  right: 26px;
+  top: 36px;
+  width: 20px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #ffdf51, #ffb627);
+  transform: rotate(9deg);
+}
+
+.goose-head {
+  right: 20px;
+  top: 23px;
+  width: 35px;
+  height: 27px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 69% 35%, #22253a 2px, transparent 3px), #ffe063;
+}
+
+.goose-head::after {
+  content: "";
+  position: absolute;
+  left: 29px;
+  top: 12px;
+  width: 16px;
+  height: 9px;
+  border-radius: 45% 60% 55% 30%;
+  background: #ff8d36;
+}
+
+.goose-helmet {
+  top: 9px;
+  right: 4px;
+  width: 61px;
+  height: 55px;
+  border: 2px solid #b6e5ff;
+  border-radius: 50%;
+  background: linear-gradient(140deg, #e8f9ff65, transparent 44%, #79baff31);
+  box-shadow: inset 4px 3px 0 #e8f9ff45, 0 0 14px #79baff45;
+}
+
+@keyframes goose-drift {
+  from { transform: translate(-40px, 14px) rotate(-19deg); }
+  to { transform: rotate(-8deg); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .spinner-tick, .rocket-flame { animation: none; }
-  .rocket { animation: stars-in 350ms ease 1.8s forwards; }
+  .rocket, .space-goose { animation: none; }
+  .wifi-success { animation-delay: 1.8s; }
 }
